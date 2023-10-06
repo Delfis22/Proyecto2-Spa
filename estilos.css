@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Angista Script';
+    src: url(fonts/Angista\ Script.otf);
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Daily Book';
+    src: url(fonts/Daily\ Book\ Inline.otf );
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Exquite';
+    src: url(fonts/Exquite.otf);
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Gerbil';
+    src: url(fonts/Gerbil.otf);
+    font-size: normal;
+    font-weight: normal;
+}
+
+.item{
+    font-family: 'Gerbil';
+    font-size: 12px;
+}
+
+.titulos{
+    font-family: 'Angista Script';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+.titulo2{
+    font-family: 'Daily Book';
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: rgb(255, 255, 255);
+}
+.info{
+    font-family: Arial;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.conten_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conten_servicios{
+    display: flex;
+    flex: 1 0 min-content;
+}
+.titulosservicios{
+    font-family: 'Exquite';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/fondo.jpg");
+    backdrop-filter: blur(8px);
+    background-attachment: fixed;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: flex;
+    align-items: center;
+}
+
+header .navbar{
+    display: flex;
+    gap: 8px;
+}
+
+/*main*/
+
+main{
+    height: 100%;
+    width: 100%;
+    padding: 3em 0 4em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+main .presentacion{
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;  
+    padding: .5em;
+    box-shadow: 2px 2px 30px 5px #122c06d5;
+    font-size: small;
+    min-width: min-content;
+    max-width: 40em;
+    margin: 0 auto;
+}
+.presentacion .info{
+    font-size:medium;
+}
+
+main .images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    padding: 0 1em 0 1em;
+}
+main .images .imageElement{
+    width: 5em;
+    flex:1 0 9em;
+    transition: scale 0.4s;
+}
+
+.conten_servicios{
+    padding: 2em 1em 0 1em;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+section.servicioElemento{
+    height: 30em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    position: relative;
+    flex: 1 0 15em;
+    transition: scale 0.4s;
+}
+
+.boton-comprar{
+    background-color: rgb(17, 78, 20);
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(17, 78, 20);
+    transition: background-color 0.1s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Daily Book';
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    
+}
+
+main .images .imageElement:hover{
+    scale: 1.15;
+}
+
+.serviciov:hover, .servicioe:hover, .serviciob:hover{
+    scale: 1.05;
+}
+
+section.servicioElemento .elementorecomendado{
+    position: relative;
+}
+.elementorecomendado .contenedorR{
+    position: absolute;
+    top:0;
+    margin: 0 auto;
+    background-color: #163f0cce;
+    padding: .5em;
+    color: #fff;
+    font-family: Times New Roman;
+    font-size: 12.5px;
+}
+
+.boton-comprar:hover{
+    background-color:  rgb(1, 31, 4);
+}
+
+section.servicioElemento .botonComprar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+@media (width >= 700px){
+    main .presentacion{
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;  
+        box-shadow: 2px 2px 30px 5px #122c06d5;
+        min-width: min-content;
+        max-width: 25em;
+        padding: 2em 1em 5em 1em;
+        margin: 0 auto;
+    }
+    main .presentacion .info{
+        font-size: 20px;
+    }
+
+    main .images{
+        padding: 0 7em 0 7em;
+    }
+
+    main .images .imageElement{
+        flex: 1 0 9em;
+        width: 9em;
+    }
+    
+    .conten_servicios{
+        padding: 0 7em 0 7em;
+    
+    }
+
+    .elementorecomendado .contenedorR{
+        padding: .3em;
+        font-size: 20px;
+    }
+
+}

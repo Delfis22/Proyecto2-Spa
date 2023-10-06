@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Angista Script';
+    src: url(fonts/Angista\ Script.otf);
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Daily Book';
+    src: url(fonts/Daily\ Book\ Inline.otf );
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Exquite';
+    src: url(fonts/Exquite.otf);
+    font-size: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Mona Home';
+    src: url(fonts/Mona\ Home.otf);
+    font-size: normal;
+    font-weight: normal;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+} 
+.conten_navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  
+}
+body{
+    background-image: url("images/fondopagos.jpg");
+   
+    background-attachment: fixed;
+    margin:0;
+    padding-top: 8em;
+}
+.titulos{
+    font-family: 'Mona Home';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+.titulo2{
+    font-family: 'Daily Book';
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: rgb(255, 255, 255);
+}
+.info{
+    font-family: Arial;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.conten_formu{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+.input-field{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+}
+.pedidos{
+    margin-top: 20px;
+    font-family: 'Mona Home';
+    font-size: 20px;
+}
+.boton{
+    margin-top: 20px;
+}
+.pagas{
+    align-items: center;
+    text-align:center;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    padding: 3em;
+    
+}
+.boton-confirma{
+    border-radius: 5px;
+    background-color: rgb(17, 78, 20);
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border-color: rgb(17, 78, 20);
+    transform: background-color 0.1s;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    font-family: 'Exquite';
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    
+}
+.boton-confirma:hover{
+    background-color:  rgb(1, 31, 4);
+}

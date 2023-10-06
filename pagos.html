@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="Hershed" href="images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pagos</title>
+    <link rel="stylesheet" href="stylesspay.css">
+</head>
+<body>
+    <div class="conten_navbar"> 
+        <nav class="navbar">
+        <img src="images/pagos.png" alt="Logo Facturacion" width="60px">
+        <h1 class="titulo2"> &nbsp; Hershed Spa</h1>
+        </nav>
+    </div>
+    <section class="pagas">
+            <div class="conten_formu">
+                    <div class="conten_titulo">
+                    <h2 class="titulos"> Formulario de pagos Hershed</h2>
+                    </div>
+            </div>
+            <div class="conten_formu">
+                <form>
+                    <label class="pedidos" for="nombretitular"> Nombre del titular: <br></label>
+                    <input type="text" class="campo" name="titular"/> <br>
+                    <label class="pedidos" for="mediopago"> Medio de pago: <br></label>
+                    <select id="tipo" required>
+                        <option value="mercadopago">Mercado Pago</option>
+                        <option value="cuentadni">Cuenta DNI</option>
+                        <option value="uala">Ualá</option>
+                        <option value="banconacion">Banco Nación</option>
+                        <option value="bancogalicia">Banco Galicia</option>
+                    </select> <br>
+                    <label class="pedidos" for="comprobante"> Ingrese palabra clave o numero de la operación: <br></label>
+                    <input type="text" class="campo" name="titular"/> <br>
+                </form>
+            </div>
+            <div class="boton">
+                <button class="boton-confirma">Confirmar</button>
+            </div>
+        </section>
+</body>
+</html>
